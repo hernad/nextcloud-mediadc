@@ -232,7 +232,7 @@ export default {
 						if (this.allFiles.length === 2) { // Remove detail when 1 file left
 							emit('openNextDetailGroup', this.detail)
 							this.$store.commit('deleteDetail', this.detail)
-							showMessage(this.t('mediadc', 'Group successfully removed (1 file left)'))
+							//showMessage(this.t('mediadc', 'Group successfully removed (1 file left)'))
 						}
 						const fileidIndex = files.findIndex(f => f.fileid === file.fileid)
 						files.splice(fileidIndex, 1)
